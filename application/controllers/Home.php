@@ -22,7 +22,7 @@ class Home extends CI_Controller
         $this->load->view('home', array('dataHot' => $data['limit'],
             'dataNew' => $data['new'],
 			'dataTop' => $data['top'],
-			'dataPopular' => $data['popular'],));
+			'dataPopular' => $data['popular']));
     }
 
     function loginModal() {

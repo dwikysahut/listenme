@@ -163,7 +163,7 @@
 										else:
 										?>
 										<div id="login" >Login</div>
-										<? endif; ?>
+										<?php endif; ?>
 									</a></li>
 							</ul>
 
@@ -2519,7 +2519,7 @@ endforeach;
 //     });
 // }
 	</script>
-	<?php $this->load->view('modals/modal_form');?>
+	<?php $this->load->view('modals/modal_form'); ?>
 </body>
 
 </html>

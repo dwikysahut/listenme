@@ -71,8 +71,3 @@
   </div>
 </div>
 <!-- Modal -->
-
-<div class="text-center">
-  <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#darkModalForm">Launch modal
-    register Form</a>
-</div>
