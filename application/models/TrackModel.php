@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class HomeModel extends CI_Model
+class TrackModel extends CI_Model
 {
 
-    public function getDataLimit()
+    public function getDataLimit($limit)
     {
-        $result = $this->db->get('tracks',6);
+        $result = $this->db->get('tracks',$limit);
         return $result->result_array();
     }
 
@@ -19,7 +19,17 @@ class HomeModel extends CI_Model
         $result = $this->db->get();
         return $result->result_array();
     }
-
+    public function getDataPopular()
+    {   
+        $this->db->select('*');
+        $this->db->from('tracks');
+        $this->db->where('rating > 7');
+        $this->db->order_by('id','DESC');
+        $this->db->limit(9);
+        $result = $this->db->get();
+        return $result->result_array();
+    }
+    
     // public function get_kategori()
     // {
     //     $query = $this->db->get('service');
