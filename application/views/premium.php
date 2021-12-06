@@ -38,7 +38,7 @@
 
 	<!-- Document Title
 		============================================= -->
-		<title>Listen Me</title>
+		<title>Listen.Me</title>
 
 		<style>
 			.css3-spinner { background-color: #131722; }
