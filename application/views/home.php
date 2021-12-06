@@ -8,9 +8,7 @@
 
 	<!-- Stylesheets
 		============================================= -->
-	<link
-		href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,400i,600,700|Montserrat:300,400,700|Caveat+Brush&display=swap"
-		rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,400i,600,700|Montserrat:300,400,700|Caveat+Brush&display=swap" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/style.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/dark.css" type="text/css" />
@@ -47,7 +45,6 @@
 		.css3-spinner {
 			background-color: #131722;
 		}
-
 	</style>
 
 </head>
@@ -68,14 +65,8 @@
 						<!-- Logo
 							============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo"
-								data-dark-logo="<?php echo base_url() ?>assets/demos/music/images/logo-dark.png"><img
-									src="<?php echo base_url() ?>assets/demos/music/images/logo.png"
-									alt="Canvas Logo"></a>
-							<a href="index.html" class="retina-logo"
-								data-dark-logo="<?php echo base_url() ?>assets/demos/music/images/logo-dark@2x.png"><img
-									src="<?php echo base_url() ?>assets/demos/music/images/logo@2x.png"
-									alt="Canvas Logo"></a>
+							<a href="index.html" class="standard-logo" data-dark-logo="<?php echo base_url() ?>assets/demos/music/images/logo-dark.png"><img src="<?php echo base_url() ?>assets/demos/music/images/logo.png" alt="Canvas Logo"></a>
+							<a href="index.html" class="retina-logo" data-dark-logo="<?php echo base_url() ?>assets/demos/music/images/logo-dark@2x.png"><img src="<?php echo base_url() ?>assets/demos/music/images/logo@2x.png" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
 						<div class="header-misc">
@@ -83,20 +74,17 @@
 							<!-- Top Search
 								============================================= -->
 							<div id="top-search" class="header-misc-icon">
-								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i
-										class="icon-line-cross"></i></a>
+								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
 							</div><!-- #top-search end -->
 
 						</div>
 
 						<div id="primary-menu-trigger">
 							<svg class="svg-trigger" viewBox="0 0 100 100">
-								<path
-									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+								<path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
 								</path>
 								<path d="m 30,50 h 40"></path>
-								<path
-									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+								<path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
 								</path>
 							</svg>
 						</div>
@@ -149,20 +137,20 @@
 									</ul>
 								</li>
 								<!-- <li class="menu-item"><a class="menu-link" href="#"><div>Videos</div></a></li> -->
-							
+
 								<li class="menu-item"><a class="menu-link" href="<?php echo site_url('premium') ?>">
 										<div><b>Join VIP</b></div>
 									</a></li>
-									<li class="menu-item"><a class="menu-link" href="#">
-										<?php 
-										if ($this->session->userdata('email')):
-										?>
-											<div id="logout" >Logout</div>
-										
+								<li class="menu-item"><a class="menu-link" href="#">
 										<?php
-										else:
+										if ($this->session->userdata('email')) :
 										?>
-										<div id="login" >Login</div>
+											<div id="logout">Logout</div>
+
+										<?php
+										else :
+										?>
+											<div id="login">Login</div>
 										<?php endif; ?>
 									</a></li>
 							</ul>
@@ -170,8 +158,7 @@
 						</nav><!-- #primary-menu end -->
 
 						<form class="top-search-form" action="search.html" method="get">
-							<input type="text" name="q" class="form-control" value=""
-								placeholder="Type &amp; Hit Enter.." autocomplete="off">
+							<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
 						</form>
 
 					</div>
@@ -182,8 +169,7 @@
 
 		<!-- Slider
 			============================================= -->
-		<section id="slider" class="slider-element swiper_wrapper min-vh-60 min-vh-md-100 include-header"
-			style="background: #131722;" data-effect="fade" data-loop="true" data-speed="1000">
+		<section id="slider" class="slider-element swiper_wrapper min-vh-60 min-vh-md-100 include-header" style="background: #131722;" data-effect="fade" data-loop="true" data-speed="1000">
 			<div class="swiper-container swiper-parent">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide dark">
@@ -192,25 +178,15 @@
 								<div>
 									<h2 class="font-primary nott">The Terror Of Highway.</h2>
 									<p class="d-none d-md-block">From the New York City of the World.</p>
-									<a class="button button-rounded font-weight-normal ls1 track-list mt-3 clearfix"
-										data-track="<?php echo base_url() ?>assets/demos/music/tracks/the-terror-of-highway.mp3"
-										data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/the-terror-of-highway.jpg"
-										data-title="The Terror Of Highway" data-singer="United Album"><i
-											class="icon-play"></i>Play Now</a>
+									<a class="button button-rounded font-weight-normal ls1 track-list mt-3 clearfix" data-track="<?php echo base_url() ?>assets/demos/music/tracks/the-terror-of-highway.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/the-terror-of-highway.jpg" data-title="The Terror Of Highway" data-singer="United Album"><i class="icon-play"></i>Play Now</a>
 									<!-- <a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3" style="background-color: #1f2330;"><i class="icon-line-ribbon mr-0"></i></a> -->
-									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3"
-										style="background-color: #1f2330;"><i class="icon-line-heart mr-0"></i></a>
-									<a href="#"
-										class="button d-none d-md-inline-block bg-transparent font-weight-light nott mt-3 px-3"><i
-											class="icon-line-share color"></i>Share</a>
-									<a href="#"
-										class="button d-none d-md-inline-block bg-transparent font-weight-light nott mt-3 px-3 ml-0"><i
-											class="icon-line-plus color"></i>Add</a>
+									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3" style="background-color: #1f2330;"><i class="icon-line-heart mr-0"></i></a>
+									<a href="#" class="button d-none d-md-inline-block bg-transparent font-weight-light nott mt-3 px-3"><i class="icon-line-share color"></i>Share</a>
+									<a href="#" class="button d-none d-md-inline-block bg-transparent font-weight-light nott mt-3 px-3 ml-0"><i class="icon-line-plus color"></i>Add</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide-bg"
-							style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/slider/1.jpg'); background-position: bottom center;">
+						<div class="swiper-slide-bg" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/slider/1.jpg'); background-position: bottom center;">
 						</div>
 					</div>
 					<div class="swiper-slide dark">
@@ -219,28 +195,15 @@
 								<div>
 									<h2 class="font-primary nott">sgt. peppers heart club band Edition</h2>
 									<p class="d-none d-md-block">The Beatles Club</p>
-									<a href="#"
-										class="button button-rounded font-weight-normal ls1 track-list mt-3 clearfix"
-										data-track="<?php echo base_url() ?>assets/demos/music/tracks/tammy-stan-devereaux.mp3"
-										data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/tammy-stan-devereaux.jpg"
-										data-title="sgt. peppers heart club band Edition"
-										data-singer="the bettles 2021"><i class="icon-play"></i>Play Now</a>
-									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3"
-										style="background-color: #1f2330;"><i class="icon-line-ribbon mr-0"></i></a>
-									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3"
-										style="background-color: #1f2330;"><i class="icon-line-heart mr-0"></i></a>
-									<a href="#"
-										class="button d-none d-md-inline-block mt-3 px-3 bg-transparent font-weight-light nott"
-										style="background-color: #1f2330;"><i
-											class="icon-line-share color"></i>Share</a>
-									<a href="#"
-										class="button d-none d-md-inline-block mt-3 px-3 bg-transparent font-weight-light nott ml-0"
-										style="background-color: #1f2330;"><i class="icon-line-plus color"></i>Add</a>
+									<a href="#" class="button button-rounded font-weight-normal ls1 track-list mt-3 clearfix" data-track="<?php echo base_url() ?>assets/demos/music/tracks/tammy-stan-devereaux.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/tammy-stan-devereaux.jpg" data-title="sgt. peppers heart club band Edition" data-singer="the bettles 2021"><i class="icon-play"></i>Play Now</a>
+									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3" style="background-color: #1f2330;"><i class="icon-line-ribbon mr-0"></i></a>
+									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3" style="background-color: #1f2330;"><i class="icon-line-heart mr-0"></i></a>
+									<a href="#" class="button d-none d-md-inline-block mt-3 px-3 bg-transparent font-weight-light nott" style="background-color: #1f2330;"><i class="icon-line-share color"></i>Share</a>
+									<a href="#" class="button d-none d-md-inline-block mt-3 px-3 bg-transparent font-weight-light nott ml-0" style="background-color: #1f2330;"><i class="icon-line-plus color"></i>Add</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide-bg"
-							style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/slider/2.jpg');">
+						<div class="swiper-slide-bg" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/slider/2.jpg');">
 						</div>
 					</div>
 					<div class="swiper-slide dark">
@@ -249,27 +212,15 @@
 								<div>
 									<h2 class="font-primary nott">The End Of The Beginning</h2>
 									<p class="d-none d-md-block">The Unplugged Editions</p>
-									<a href="#"
-										class="button button-rounded font-weight-normal ls1 track-list mt-3 clearfix"
-										data-track="<?php echo base_url() ?>assets/demos/music/tracks/the-end-of-the-beginning.mp3"
-										data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/the-end-of-the-beginning.jpg"
-										data-title="The End Of The Beginning" data-singer="The Unplugged Editions"
-										style="margin-top: 15px"><i class="icon-play"></i>Play Now</a>
-									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3"
-										style="background-color: #1f2330;"><i class="icon-line-ribbon mr-0"></i></a>
-									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3"
-										style="background-color: #1f2330;"><i class="icon-line-heart mr-0"></i></a>
-									<a href="#"
-										class="button d-none d-md-inline-block mt-3 px-3 bg-transparent font-weight-light nott"><i
-											class="icon-line-share color"></i>Share</a>
-									<a href="#"
-										class="button d-none d-md-inline-block mt-3 px-3 bg-transparent font-weight-light nott ml-0"><i
-											class="icon-line-plus color"></i>Add</a>
+									<a href="#" class="button button-rounded font-weight-normal ls1 track-list mt-3 clearfix" data-track="<?php echo base_url() ?>assets/demos/music/tracks/the-end-of-the-beginning.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/the-end-of-the-beginning.jpg" data-title="The End Of The Beginning" data-singer="The Unplugged Editions" style="margin-top: 15px"><i class="icon-play"></i>Play Now</a>
+									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3" style="background-color: #1f2330;"><i class="icon-line-ribbon mr-0"></i></a>
+									<a href="#" class="button d-none d-md-inline-block button-rounded mt-3 px-3" style="background-color: #1f2330;"><i class="icon-line-heart mr-0"></i></a>
+									<a href="#" class="button d-none d-md-inline-block mt-3 px-3 bg-transparent font-weight-light nott"><i class="icon-line-share color"></i>Share</a>
+									<a href="#" class="button d-none d-md-inline-block mt-3 px-3 bg-transparent font-weight-light nott ml-0"><i class="icon-line-plus color"></i>Add</a>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide-bg"
-							style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/slider/3.jpg'); background-position: bottom left;">
+						<div class="swiper-slide-bg" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/slider/3.jpg'); background-position: bottom left;">
 						</div>
 					</div>
 				</div>
@@ -302,8 +253,7 @@
 										<h3>WIN $5.000.000 NOW</h3>
 									</div>
 									<div class="pricing-price">
-										<img src="../assets/demos/music/images/ads2.jpeg" alt="Girl in a jacket"
-											width="500" height="300">
+										<img src="../assets/demos/music/images/ads2.jpeg" alt="Girl in a jacket" width="500" height="300">
 									</div>
 
 									<div class="pricing-action">
@@ -320,8 +270,7 @@
 										<h3>GET $30.000.000 </h3>
 									</div>
 									<div class="pricing-price">
-										<img src="../assets/demos/music/images/ads1.jpeg" alt="Girl in a jacket"
-											width="500" height="300">
+										<img src="../assets/demos/music/images/ads1.jpeg" alt="Girl in a jacket" width="500" height="300">
 									</div>
 
 									<div class="pricing-action">
@@ -341,13 +290,11 @@
 
 					<div id="section-pricing" class="page-section p-0 m-0">
 
-						<div class="pricing-tenure-switcher row align-items-center justify-content-center mb-4 dark"
-							data-container="#pricing-switch">
+						<div class="pricing-tenure-switcher row align-items-center justify-content-center mb-4 dark" data-container="#pricing-switch">
 							<span class="pts-left">Monthly</span>
 							<div class="pts-switcher mx-3">
 								<div class="switch">
-									<input id="switch-toggle-pricing-tenure" class="switch-toggle switch-toggle-round"
-										type="checkbox">
+									<input id="switch-toggle-pricing-tenure" class="switch-toggle switch-toggle-round" type="checkbox">
 									<label for="switch-toggle-pricing-tenure" class="mb-0"></label>
 								</div>
 							</div>
@@ -421,39 +368,31 @@
 
 					<!-- Carousel
 						============================================= -->
-					<div id="oc-popular-songs" class="owl-carousel image-carousel carousel-widget" data-margin="20"
-						data-nav="true" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4"
-						data-items-lg="6" data-items-xl="6">
+					<div id="oc-popular-songs" class="owl-carousel image-carousel carousel-widget" data-margin="20" data-nav="true" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="6" data-items-xl="6">
 
 						<!-- Carousel Items
 							============================================= -->
 						<?php
-foreach ($dataPopular as $item):
+						foreach ($dataPopular as $item) :
 
-?>
-						<div class="oc-item" data-animate="fadeInDown">
-							<img src="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>"
-								alt="Image 1" height="200">
-							<div class="bg-overlay">
-								<div
-									class="bg-overlay-content text-overlay-mask dark desc-sm align-items-center justify-content-between">
-									<div class="portfolio-desc py-0">
-										<h3><a href="#"><?php echo $item['artist'] ?> </a></h3>
-										<span><a href="#"><?php echo $item['title'] ?> </a></span>
-									</div>
-									<div data-hover-animate="fadeIn" data-hover-speed="400">
-										<a href="#" class="text-light mx-0 track-list"
-											data-track="<?php echo base_url() ?>assets/demos/music/tracks/<?php echo $item['track_name'] ?> "
-											data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/maq-amor.jpg"
-											data-title="<?php echo $item['title'] ?> "
-											data-singer="<?php echo $item['artist'] ?> "><i class="icon-play"></i></a>
+						?>
+							<div class="oc-item" data-animate="fadeInDown">
+								<img src="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>" alt="Image 1" height="200">
+								<div class="bg-overlay">
+									<div class="bg-overlay-content text-overlay-mask dark desc-sm align-items-center justify-content-between">
+										<div class="portfolio-desc py-0">
+											<h3><a href="#"><?php echo $item['artist'] ?> </a></h3>
+											<span><a href="#"><?php echo $item['title'] ?> </a></span>
+										</div>
+										<div data-hover-animate="fadeIn" data-hover-speed="400">
+											<a href="#" class="text-light mx-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/<?php echo $item['track_name'] ?> " data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/maq-amor.jpg" data-title="<?php echo $item['title'] ?> " data-singer="<?php echo $item['artist'] ?> "><i class="icon-play"></i></a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 						<?php
-endforeach;
-?>
+						endforeach;
+						?>
 						<!-- <div class="oc-item" data-animate="fadeInDown" data-delay="100">
 								<img src="<?php echo base_url() ?>assets/demos/music/images/popular-songs/9.jpg" alt="Image 1">
 								<div class="bg-overlay">
@@ -570,47 +509,38 @@ endforeach;
 									============================================= -->
 
 								<?php
-$i = 1;
-foreach ($dataHot as $item): ?>
-								<div class="songs-list">
-									<div class="songs-number"><?php echo $i ?></div>
-									<div class="songs-image track-image">
-										<a href="#" class="track-list"
-											data-track="<?php echo base_url() ?>assets/demos/music/tracks/<?php echo $item['track_name'] ?>"
-											data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>"
-											data-title="<?php echo $item['title'] ?>"
-											data-singer="<?php echo $item['artist'] ?>">
-											<img src="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>"
-												alt="Image 1"><span><i class="icon-play"></i></span>
-										</a>
+								$i = 1;
+								foreach ($dataHot as $item) : ?>
+									<div class="songs-list">
+										<div class="songs-number"><?php echo $i ?></div>
+										<div class="songs-image track-image">
+											<a href="#" class="track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/<?php echo $item['track_name'] ?>" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>" data-title="<?php echo $item['title'] ?>" data-singer="<?php echo $item['artist'] ?>">
+												<img src="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>" alt="Image 1"><span><i class="icon-play"></i></span>
+											</a>
+										</div>
+										<div class="songs-name track-name"><a href="#"><?php echo $item['title'] ?><br><span><?php echo $item['artist'] ?></span></a>
+										</div>
+										<div class="songs-time">03:28</div>
+										<div class="songs-button"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-line-ellipsis"></i></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a class="dropdown-item" href="#"><span class="icon-line-plus"></span>
+														Add to Queue</a>
+													<a class="dropdown-item" href="#"><span class="icon-music"></span> Add
+														to Playlist</a>
+													<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span> Download Offline</a>
+													<a class="dropdown-item" href="#"><span class="icon-line-heart"></span>
+														Love</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#"><span class="icon-line-share"></span>
+														Share</a>
+												</li>
+											</ul>
+										</div>
 									</div>
-									<div class="songs-name track-name"><a
-											href="#"><?php echo $item['title'] ?><br><span><?php echo $item['artist'] ?></span></a>
-									</div>
-									<div class="songs-time">03:28</div>
-									<div class="songs-button"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
-											aria-haspopup="true" aria-expanded="false"><i
-												class="icon-line-ellipsis"></i></a>
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a class="dropdown-item" href="#"><span class="icon-line-plus"></span>
-													Add to Queue</a>
-												<a class="dropdown-item" href="#"><span class="icon-music"></span> Add
-													to Playlist</a>
-												<a class="dropdown-item" href="#"><span
-														class="icon-line-cloud-download"></span> Download Offline</a>
-												<a class="dropdown-item" href="#"><span class="icon-line-heart"></span>
-													Love</a>
-												<div class="dropdown-divider"></div>
-												<a class="dropdown-item" href="#"><span class="icon-line-share"></span>
-													Share</a>
-											</li>
-										</ul>
-									</div>
-								</div>
 								<?php
-$i++;
-endforeach;?>
+									$i++;
+								endforeach; ?>
 
 								<!-- List Items
 									============================================= -->
@@ -732,8 +662,7 @@ endforeach;?>
 											</div>
 										</div> -->
 							</div>
-							<a href="#" class="button bg-transparent font-weight-light nott float-right ml-0"
-								style="color: #AAA; padding: 0 16px;">See More..</a>
+							<a href="#" class="button bg-transparent font-weight-light nott float-right ml-0" style="color: #AAA; padding: 0 16px;">See More..</a>
 						</div>
 
 						<div class="w-100 d-block d-md-block d-lg-none topmargin-lg clear"></div>
@@ -748,47 +677,38 @@ endforeach;?>
 								<!-- List Items
 									============================================= -->
 								<?php
-$i = 1;
-foreach ($dataNew as $item): ?>
-								<div class="songs-list">
-									<div class="songs-number"><?php echo $i ?></div>
-									<div class="songs-image track-image">
-										<a href="#" class="track-list"
-											data-track="<?php echo base_url() ?>assets/demos/music/tracks/<?php echo $item['track_name'] ?>"
-											data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>"
-											data-title="<?php echo $item['title'] ?>"
-											data-singer="<?php echo $item['artist'] ?>">
-											<img src="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>"
-												alt="Image 1"><span><i class="icon-play"></i></span>
-										</a>
+								$i = 1;
+								foreach ($dataNew as $item) : ?>
+									<div class="songs-list">
+										<div class="songs-number"><?php echo $i ?></div>
+										<div class="songs-image track-image">
+											<a href="#" class="track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/<?php echo $item['track_name'] ?>" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>" data-title="<?php echo $item['title'] ?>" data-singer="<?php echo $item['artist'] ?>">
+												<img src="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?>" alt="Image 1"><span><i class="icon-play"></i></span>
+											</a>
+										</div>
+										<div class="songs-name track-name"><a href="#"><?php echo $item['title'] ?><br><span><?php echo $item['artist'] ?></span></a>
+										</div>
+										<div class="songs-time">03:28</div>
+										<div class="songs-button"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-line-ellipsis"></i></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a class="dropdown-item" href="#"><span class="icon-line-plus"></span>
+														Add to Queue</a>
+													<a class="dropdown-item" href="#"><span class="icon-music"></span> Add
+														to Playlist</a>
+													<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span> Download Offline</a>
+													<a class="dropdown-item" href="#"><span class="icon-line-heart"></span>
+														Love</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#"><span class="icon-line-share"></span>
+														Share</a>
+												</li>
+											</ul>
+										</div>
 									</div>
-									<div class="songs-name track-name"><a
-											href="#"><?php echo $item['title'] ?><br><span><?php echo $item['artist'] ?></span></a>
-									</div>
-									<div class="songs-time">03:28</div>
-									<div class="songs-button"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
-											aria-haspopup="true" aria-expanded="false"><i
-												class="icon-line-ellipsis"></i></a>
-										<ul class="dropdown-menu dropdown-menu-right">
-											<li>
-												<a class="dropdown-item" href="#"><span class="icon-line-plus"></span>
-													Add to Queue</a>
-												<a class="dropdown-item" href="#"><span class="icon-music"></span> Add
-													to Playlist</a>
-												<a class="dropdown-item" href="#"><span
-														class="icon-line-cloud-download"></span> Download Offline</a>
-												<a class="dropdown-item" href="#"><span class="icon-line-heart"></span>
-													Love</a>
-												<div class="dropdown-divider"></div>
-												<a class="dropdown-item" href="#"><span class="icon-line-share"></span>
-													Share</a>
-											</li>
-										</ul>
-									</div>
-								</div>
 								<?php
-$i++;
-endforeach;?>
+									$i++;
+								endforeach; ?>
 
 								<!-- List Items
 									============================================= -->
@@ -912,15 +832,13 @@ endforeach;?>
 									</div> -->
 							</div>
 
-							<a href="#" class="button bg-transparent font-weight-light nott float-right ml-0"
-								style="color: #AAA; padding: 0 16px;">See More..</a>
+							<a href="#" class="button bg-transparent font-weight-light nott float-right ml-0" style="color: #AAA; padding: 0 16px;">See More..</a>
 						</div>
 					</div>
 
 					<!-- Tabs
 						============================================= -->
-					<div class="tabs tabs-bb tabs-music-demo tabs-responsive dark topmargin-lg clearfix" id="album-tab"
-						data-accordion-style="accordion-bg">
+					<div class="tabs tabs-bb tabs-music-demo tabs-responsive dark topmargin-lg clearfix" id="album-tab" data-accordion-style="accordion-bg">
 
 						<ul class="tab-nav border-bottom-0 clearfix">
 							<li><a href="#tabs-1">Featured</a></li>
@@ -939,11 +857,9 @@ endforeach;?>
 								<div class="row gutter-20 align-items-stretch">
 
 									<div class="col-md-6 min-vh-40">
-										<div class="grid-inner h-100"
-											style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/1.jpg');">
+										<div class="grid-inner h-100" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/1.jpg');">
 											<div class="bg-overlay">
-												<div
-													class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+												<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 													<div>
 														<div class="portfolio-desc">
 															<span class="font-primary text-uppercase">Justin
@@ -952,35 +868,23 @@ endforeach;?>
 																	Worlds</a></h3>
 														</div>
 														<div>
-															<a href="#"
-																class="button button-circle button-small font-weight-normal ls1 ml-0 track-list"
-																data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3"
-																data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-																data-title="Fallin Extended Mix" data-singer="Justin"><i
-																	class="icon-play"></i>Play Now</a>
-															<a href="#"
-																class="button button-circle button-small button-border button-white font-weight-normal ls1">View
+															<a href="#" class="button button-circle button-small font-weight-normal ls1 ml-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg" data-title="Fallin Extended Mix" data-singer="Justin"><i class="icon-play"></i>Play Now</a>
+															<a href="#" class="button button-circle button-small button-border button-white font-weight-normal ls1">View
 																All</a>
 														</div>
 													</div>
 												</div>
 												<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 													<a href="#"><i class="icon-line-heart"></i></a>
-													<a href="#" data-toggle="dropdown"><i
-															class="icon-line-ellipsis"></i></a>
+													<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 													<div class="dropdown-menu dropdown-menu-right">
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-plus"></span> Add to Queue</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-music"></span> Add to Playlist</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-cloud-download"></span> Download
+														<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+														<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span> Download
 															Offline</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-heart"></span> Love</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 														<div class="dropdown-divider"></div>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-share"></span> Share</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 													</div>
 												</div>
 											</div>
@@ -991,11 +895,9 @@ endforeach;?>
 										<div class="row mx-0 gutter-20">
 											<div class="col-6">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/2.jpg"
-														alt="Locked Steel Gate">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/2.jpg" alt="Locked Steel Gate">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div class="portfolio-desc py-0">
 																<span class="font-primary text-uppercase">Nicki
 																	Minaj</span>
@@ -1013,11 +915,9 @@ endforeach;?>
 
 											<div class="col-6">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/3.jpg"
-														alt="Mac Sunglasses">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/3.jpg" alt="Mac Sunglasses">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div class="portfolio-desc py-0">
 																<span class="font-primary text-uppercase">Rihanna</span>
 																<h3><a href="#" class="font-secondary">Latest
@@ -1034,11 +934,9 @@ endforeach;?>
 
 											<div class="col-12">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/4.jpg"
-														alt="Image">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/4.jpg" alt="Image">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div>
 																<div class="portfolio-desc">
 																	<span class="font-primary text-uppercase">David
@@ -1047,15 +945,8 @@ endforeach;?>
 																			of David Guetta</a></h3>
 																</div>
 																<div>
-																	<a href="#"
-																		class="button button-circle button-small font-weight-normal ls1 ml-0 track-list"
-																		data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3"
-																		data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-																		data-title="Fallin Extended Mix"
-																		data-singer="Justin"><i
-																			class="icon-play"></i>Play Now</a>
-																	<a href="#"
-																		class="button button-circle button-small button-border button-white font-weight-normal ls1">View
+																	<a href="#" class="button button-circle button-small font-weight-normal ls1 ml-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg" data-title="Fallin Extended Mix" data-singer="Justin"><i class="icon-play"></i>Play Now</a>
+																	<a href="#" class="button button-circle button-small button-border button-white font-weight-normal ls1">View
 																		All</a>
 																</div>
 															</div>
@@ -1080,11 +971,9 @@ endforeach;?>
 								<div class="row gutter-20 align-items-stretch">
 
 									<div class="col-md-6 min-vh-40">
-										<div class="grid-inner h-100"
-											style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/1.jpg');">
+										<div class="grid-inner h-100" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/1.jpg');">
 											<div class="bg-overlay">
-												<div
-													class="bg-overlay-content text-overlay-mask dark desc-sm align-items-start justify-content-between">
+												<div class="bg-overlay-content text-overlay-mask dark desc-sm align-items-start justify-content-between">
 													<div>
 														<div class="portfolio-desc">
 															<span class="font-primary text-uppercase">Katy Perry</span>
@@ -1092,35 +981,23 @@ endforeach;?>
 																	Perry</a></h3>
 														</div>
 														<div>
-															<a href="#"
-																class="button button-circle button-small font-weight-normal ls1 ml-0 track-list"
-																data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3"
-																data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-																data-title="Fallin Extended Mix" data-singer="Justin"><i
-																	class="icon-play"></i>Play Now</a>
-															<a href="#"
-																class="button button-circle button-small button-border button-white font-weight-normal ls1">View
+															<a href="#" class="button button-circle button-small font-weight-normal ls1 ml-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg" data-title="Fallin Extended Mix" data-singer="Justin"><i class="icon-play"></i>Play Now</a>
+															<a href="#" class="button button-circle button-small button-border button-white font-weight-normal ls1">View
 																All</a>
 														</div>
 													</div>
 												</div>
 												<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 													<a href="#"><i class="icon-line-heart"></i></a>
-													<a href="#" data-toggle="dropdown"><i
-															class="icon-line-ellipsis"></i></a>
+													<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 													<div class="dropdown-menu dropdown-menu-right">
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-plus"></span> Add to Queue</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-music"></span> Add to Playlist</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-cloud-download"></span> Download
+														<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+														<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span> Download
 															Offline</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-heart"></span> Love</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 														<div class="dropdown-divider"></div>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-share"></span> Share</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 													</div>
 												</div>
 											</div>
@@ -1131,11 +1008,9 @@ endforeach;?>
 										<div class="row mx-0 gutter-20">
 											<div class="col-6">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/2.jpg"
-														alt="Locked Steel Gate">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/2.jpg" alt="Locked Steel Gate">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div class="portfolio-desc">
 																<span class="font-primary text-uppercase">Bruno
 																	Mars</span>
@@ -1145,21 +1020,15 @@ endforeach;?>
 														</div>
 														<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 															<a href="#"><i class="icon-line-heart"></i></a>
-															<a href="#" data-toggle="dropdown"><i
-																	class="icon-line-ellipsis"></i></a>
+															<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 															<div class="dropdown-menu dropdown-menu-right">
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-plus"></span> Add to Queue</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-music"></span> Add to Playlist</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-cloud-download"></span>
+																<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+																<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span>
 																	Download Offline</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-heart"></span> Love</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 																<div class="dropdown-divider"></div>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-share"></span> Share</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 															</div>
 														</div>
 													</div>
@@ -1168,11 +1037,9 @@ endforeach;?>
 
 											<div class="col-6">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/3.jpg"
-														alt="Mac Sunglasses">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/3.jpg" alt="Mac Sunglasses">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div class="portfolio-desc">
 																<span class="font-primary text-uppercase">Jennifer
 																	Lopez</span>
@@ -1182,21 +1049,15 @@ endforeach;?>
 														</div>
 														<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 															<a href="#"><i class="icon-line-heart"></i></a>
-															<a href="#" data-toggle="dropdown"><i
-																	class="icon-line-ellipsis"></i></a>
+															<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 															<div class="dropdown-menu dropdown-menu-right">
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-plus"></span> Add to Queue</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-music"></span> Add to Playlist</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-cloud-download"></span>
+																<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+																<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span>
 																	Download Offline</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-heart"></span> Love</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 																<div class="dropdown-divider"></div>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-share"></span> Share</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 															</div>
 														</div>
 													</div>
@@ -1205,11 +1066,9 @@ endforeach;?>
 
 											<div class="col-12">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/4.jpg"
-														alt="Image">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/4.jpg" alt="Image">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div>
 																<div class="portfolio-desc">
 																	<span class="font-primary text-uppercase">Taylor
@@ -1218,36 +1077,23 @@ endforeach;?>
 																			Off</a></h3>
 																</div>
 																<div>
-																	<a href="#"
-																		class="button button-circle button-small font-weight-normal ls1 ml-0 track-list"
-																		data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3"
-																		data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-																		data-title="Fallin Extended Mix"
-																		data-singer="Justin"><i
-																			class="icon-play"></i>Play Now</a>
-																	<a href="#"
-																		class="button button-circle button-small button-border button-white font-weight-normal ls1">View
+																	<a href="#" class="button button-circle button-small font-weight-normal ls1 ml-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg" data-title="Fallin Extended Mix" data-singer="Justin"><i class="icon-play"></i>Play Now</a>
+																	<a href="#" class="button button-circle button-small button-border button-white font-weight-normal ls1">View
 																		All</a>
 																</div>
 															</div>
 														</div>
 														<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 															<a href="#"><i class="icon-line-heart"></i></a>
-															<a href="#" data-toggle="dropdown"><i
-																	class="icon-line-ellipsis"></i></a>
+															<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 															<div class="dropdown-menu dropdown-menu-right">
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-plus"></span> Add to Queue</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-music"></span> Add to Playlist</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-cloud-download"></span>
+																<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+																<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span>
 																	Download Offline</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-heart"></span> Love</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 																<div class="dropdown-divider"></div>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-share"></span> Share</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 															</div>
 														</div>
 													</div>
@@ -1266,11 +1112,9 @@ endforeach;?>
 								<div class="row gutter-20 align-items-stretch">
 
 									<div class="col-md-6 min-vh-40">
-										<div class="grid-inner h-100"
-											style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/1.jpg');">
+										<div class="grid-inner h-100" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/1.jpg');">
 											<div class="bg-overlay">
-												<div
-													class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+												<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 													<div>
 														<div class="portfolio-desc">
 															<span class="font-primary text-uppercase">Justin
@@ -1279,35 +1123,23 @@ endforeach;?>
 																	Worlds</a></h3>
 														</div>
 														<div>
-															<a href="#"
-																class="button button-circle button-small font-weight-normal ls1 ml-0 track-list"
-																data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3"
-																data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-																data-title="Fallin Extended Mix" data-singer="Justin"><i
-																	class="icon-play"></i>Play Now</a>
-															<a href="#"
-																class="button button-circle button-small button-border button-white font-weight-normal ls1">View
+															<a href="#" class="button button-circle button-small font-weight-normal ls1 ml-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg" data-title="Fallin Extended Mix" data-singer="Justin"><i class="icon-play"></i>Play Now</a>
+															<a href="#" class="button button-circle button-small button-border button-white font-weight-normal ls1">View
 																All</a>
 														</div>
 													</div>
 												</div>
 												<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 													<a href="#"><i class="icon-line-heart"></i></a>
-													<a href="#" data-toggle="dropdown"><i
-															class="icon-line-ellipsis"></i></a>
+													<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 													<div class="dropdown-menu dropdown-menu-right">
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-plus"></span> Add to Queue</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-music"></span> Add to Playlist</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-cloud-download"></span> Download
+														<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+														<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span> Download
 															Offline</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-heart"></span> Love</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 														<div class="dropdown-divider"></div>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-share"></span> Share</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 													</div>
 												</div>
 											</div>
@@ -1318,11 +1150,9 @@ endforeach;?>
 										<div class="row mx-0 gutter-20">
 											<div class="col-6">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/2.jpg"
-														alt="Locked Steel Gate">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/2.jpg" alt="Locked Steel Gate">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div class="portfolio-desc py-0">
 																<span class="font-primary text-uppercase">Nicki
 																	Minaj</span>
@@ -1340,11 +1170,9 @@ endforeach;?>
 
 											<div class="col-6">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/3.jpg"
-														alt="Mac Sunglasses">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/3.jpg" alt="Mac Sunglasses">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div class="portfolio-desc py-0">
 																<span class="font-primary text-uppercase">Rihanna</span>
 																<h3><a href="#" class="font-secondary">Latest
@@ -1361,11 +1189,9 @@ endforeach;?>
 
 											<div class="col-12">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/4.jpg"
-														alt="Image">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/1/4.jpg" alt="Image">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div>
 																<div class="portfolio-desc">
 																	<span class="font-primary text-uppercase">David
@@ -1374,15 +1200,8 @@ endforeach;?>
 																			of David Guetta</a></h3>
 																</div>
 																<div>
-																	<a href="#"
-																		class="button button-circle button-small font-weight-normal ls1 ml-0 track-list"
-																		data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3"
-																		data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-																		data-title="Fallin Extended Mix"
-																		data-singer="Justin"><i
-																			class="icon-play"></i>Play Now</a>
-																	<a href="#"
-																		class="button button-circle button-small button-border button-white font-weight-normal ls1">View
+																	<a href="#" class="button button-circle button-small font-weight-normal ls1 ml-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg" data-title="Fallin Extended Mix" data-singer="Justin"><i class="icon-play"></i>Play Now</a>
+																	<a href="#" class="button button-circle button-small button-border button-white font-weight-normal ls1">View
 																		All</a>
 																</div>
 															</div>
@@ -1407,11 +1226,9 @@ endforeach;?>
 								<div class="row gutter-20 align-items-stretch">
 
 									<div class="col-md-6 min-vh-40">
-										<div class="grid-inner h-100"
-											style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/1.jpg');">
+										<div class="grid-inner h-100" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/1.jpg');">
 											<div class="bg-overlay">
-												<div
-													class="bg-overlay-content text-overlay-mask dark desc-sm align-items-start justify-content-between">
+												<div class="bg-overlay-content text-overlay-mask dark desc-sm align-items-start justify-content-between">
 													<div>
 														<div class="portfolio-desc">
 															<span class="font-primary text-uppercase">Katy Perry</span>
@@ -1419,35 +1236,23 @@ endforeach;?>
 																	Perry</a></h3>
 														</div>
 														<div>
-															<a href="#"
-																class="button button-circle button-small font-weight-normal ls1 ml-0 track-list"
-																data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3"
-																data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-																data-title="Fallin Extended Mix" data-singer="Justin"><i
-																	class="icon-play"></i>Play Now</a>
-															<a href="#"
-																class="button button-circle button-small button-border button-white font-weight-normal ls1">View
+															<a href="#" class="button button-circle button-small font-weight-normal ls1 ml-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg" data-title="Fallin Extended Mix" data-singer="Justin"><i class="icon-play"></i>Play Now</a>
+															<a href="#" class="button button-circle button-small button-border button-white font-weight-normal ls1">View
 																All</a>
 														</div>
 													</div>
 												</div>
 												<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 													<a href="#"><i class="icon-line-heart"></i></a>
-													<a href="#" data-toggle="dropdown"><i
-															class="icon-line-ellipsis"></i></a>
+													<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 													<div class="dropdown-menu dropdown-menu-right">
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-plus"></span> Add to Queue</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-music"></span> Add to Playlist</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-cloud-download"></span> Download
+														<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+														<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span> Download
 															Offline</a>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-heart"></span> Love</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 														<div class="dropdown-divider"></div>
-														<a class="dropdown-item" href="#"><span
-																class="icon-line-share"></span> Share</a>
+														<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 													</div>
 												</div>
 											</div>
@@ -1458,11 +1263,9 @@ endforeach;?>
 										<div class="row mx-0 gutter-20">
 											<div class="col-6">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/2.jpg"
-														alt="Locked Steel Gate">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/2.jpg" alt="Locked Steel Gate">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div class="portfolio-desc">
 																<span class="font-primary text-uppercase">Bruno
 																	Mars</span>
@@ -1472,21 +1275,15 @@ endforeach;?>
 														</div>
 														<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 															<a href="#"><i class="icon-line-heart"></i></a>
-															<a href="#" data-toggle="dropdown"><i
-																	class="icon-line-ellipsis"></i></a>
+															<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 															<div class="dropdown-menu dropdown-menu-right">
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-plus"></span> Add to Queue</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-music"></span> Add to Playlist</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-cloud-download"></span>
+																<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+																<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span>
 																	Download Offline</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-heart"></span> Love</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 																<div class="dropdown-divider"></div>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-share"></span> Share</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 															</div>
 														</div>
 													</div>
@@ -1495,11 +1292,9 @@ endforeach;?>
 
 											<div class="col-6">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/3.jpg"
-														alt="Mac Sunglasses">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/3.jpg" alt="Mac Sunglasses">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div class="portfolio-desc">
 																<span class="font-primary text-uppercase">Jennifer
 																	Lopez</span>
@@ -1509,21 +1304,15 @@ endforeach;?>
 														</div>
 														<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 															<a href="#"><i class="icon-line-heart"></i></a>
-															<a href="#" data-toggle="dropdown"><i
-																	class="icon-line-ellipsis"></i></a>
+															<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 															<div class="dropdown-menu dropdown-menu-right">
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-plus"></span> Add to Queue</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-music"></span> Add to Playlist</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-cloud-download"></span>
+																<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+																<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span>
 																	Download Offline</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-heart"></span> Love</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 																<div class="dropdown-divider"></div>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-share"></span> Share</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 															</div>
 														</div>
 													</div>
@@ -1532,11 +1321,9 @@ endforeach;?>
 
 											<div class="col-12">
 												<div class="grid-inner">
-													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/4.jpg"
-														alt="Image">
+													<img src="<?php echo base_url() ?>assets/demos/music/images/album-artworks/2/4.jpg" alt="Image">
 													<div class="bg-overlay">
-														<div
-															class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
+														<div class="bg-overlay-content text-overlay-mask dark align-items-start justify-content-between">
 															<div>
 																<div class="portfolio-desc">
 																	<span class="font-primary text-uppercase">Taylor
@@ -1545,36 +1332,23 @@ endforeach;?>
 																			Off</a></h3>
 																</div>
 																<div>
-																	<a href="#"
-																		class="button button-circle button-small font-weight-normal ls1 ml-0 track-list"
-																		data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3"
-																		data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg"
-																		data-title="Fallin Extended Mix"
-																		data-singer="Justin"><i
-																			class="icon-play"></i>Play Now</a>
-																	<a href="#"
-																		class="button button-circle button-small button-border button-white font-weight-normal ls1">View
+																	<a href="#" class="button button-circle button-small font-weight-normal ls1 ml-0 track-list" data-track="<?php echo base_url() ?>assets/demos/music/tracks/fallin-extended-mix.mp3" data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/fallin-extended-mix.jpg" data-title="Fallin Extended Mix" data-singer="Justin"><i class="icon-play"></i>Play Now</a>
+																	<a href="#" class="button button-circle button-small button-border button-white font-weight-normal ls1">View
 																		All</a>
 																</div>
 															</div>
 														</div>
 														<div class="bg-overlay-floating" data-hover-animate="fadeIn">
 															<a href="#"><i class="icon-line-heart"></i></a>
-															<a href="#" data-toggle="dropdown"><i
-																	class="icon-line-ellipsis"></i></a>
+															<a href="#" data-toggle="dropdown"><i class="icon-line-ellipsis"></i></a>
 															<div class="dropdown-menu dropdown-menu-right">
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-plus"></span> Add to Queue</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-music"></span> Add to Playlist</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-cloud-download"></span>
+																<a class="dropdown-item" href="#"><span class="icon-line-plus"></span> Add to Queue</a>
+																<a class="dropdown-item" href="#"><span class="icon-music"></span> Add to Playlist</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-cloud-download"></span>
 																	Download Offline</a>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-heart"></span> Love</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-heart"></span> Love</a>
 																<div class="dropdown-divider"></div>
-																<a class="dropdown-item" href="#"><span
-																		class="icon-line-share"></span> Share</a>
+																<a class="dropdown-item" href="#"><span class="icon-line-share"></span> Share</a>
 															</div>
 														</div>
 													</div>
@@ -1598,28 +1372,18 @@ endforeach;?>
 					</div>
 
 
-					<div id="top-charts" class="portfolio grid-container row dark gutter-20 desc-sm"
-						data-layout="fitRows">
+					<div id="top-charts" class="portfolio grid-container row dark gutter-20 desc-sm" data-layout="fitRows">
 
 						<article class="portfolio-item col-6 col-md-3 col-lg-2" data-animate="fadeIn">
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/1.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/1.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1635,21 +1399,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/2.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/2.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1665,21 +1420,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/3.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/3.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1695,21 +1441,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/4.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/4.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1725,21 +1462,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/5.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/5.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1755,21 +1483,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/6.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/6.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1785,21 +1504,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/7.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/7.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1815,21 +1525,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/8.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/8.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1845,21 +1546,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/9.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/9.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1875,21 +1567,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/10.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/10.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1905,21 +1588,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/11.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/11.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1935,21 +1609,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/12.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/12.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1965,21 +1630,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/13.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/13.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -1995,21 +1651,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/14.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/14.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -2025,21 +1672,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/15.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/15.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -2055,21 +1693,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/16.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/16.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -2085,21 +1714,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/17.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/17.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -2115,21 +1735,12 @@ endforeach;?>
 							<div class="grid-inner">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/18.jpg"
-											alt="Image">
+										<img src="<?php echo base_url() ?>assets/demos/music/images/charts/18.jpg" alt="Image">
 									</a>
 									<div class="bg-overlay">
 										<div class="bg-overlay-content dark" data-hover-animate="fadeIn">
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-folder"></i></a>
-											<a href="#"
-												class="overlay-trigger-icon bg-dark text-ts text-light h-text-color"
-												data-hover-animate="fadeInDownSmall"
-												data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
-													class="icon-line-share"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-folder"></i></a>
+											<a href="#" class="overlay-trigger-icon bg-dark text-ts text-light h-text-color" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i class="icon-line-share"></i></a>
 										</div>
 										<div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
 									</div>
@@ -2151,58 +1762,39 @@ endforeach;?>
 							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
 						</div>
 						<div class="singer-wrap clearfix">
-							<a href="#" class="singer-bb-image big"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/david.jpg');"><span>David
+							<a href="#" class="singer-bb-image big" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/david.jpg');"><span>David
 									Guetta</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/jennifer-lopez.jpg'); top: 0px; left: 3%;"><span>Jennifer
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/jennifer-lopez.jpg'); top: 0px; left: 3%;"><span>Jennifer
 									Lopez</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/selena-gomez.jpg'); top: 43%; margin-left: -49%;"><span>Selena
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/selena-gomez.jpg'); top: 43%; margin-left: -49%;"><span>Selena
 									Gomez</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/bruno-mars.jpg'); top: 34%; margin-left: -38%;"><span>Bruno
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/bruno-mars.jpg'); top: 34%; margin-left: -38%;"><span>Bruno
 									Mars</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/lady-gaga.jpg'); top: 0; margin-left: -33%;"><span>Lady
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/lady-gaga.jpg'); top: 0; margin-left: -33%;"><span>Lady
 									Gaga</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/ariana-grande.jpg'); top: 0; margin-left: -20%;"><span>Ariana
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/ariana-grande.jpg'); top: 0; margin-left: -20%;"><span>Ariana
 									Grande</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/chris-brown.jpg'); top: auto; bottom: 0%; margin-left: -42%;"><span>Chris
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/chris-brown.jpg'); top: auto; bottom: 0%; margin-left: -42%;"><span>Chris
 									Brown</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/katy-perry.jpg'); top: 34%; margin-left: -27%;"><span>Katy
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/katy-perry.jpg'); top: 34%; margin-left: -27%;"><span>Katy
 									Perry</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/flo-rida.jpg'); top: auto; bottom: 0; margin-left: -31%;"><span>Flo
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/flo-rida.jpg'); top: auto; bottom: 0; margin-left: -31%;"><span>Flo
 									Rida</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/martin-garrix.jpg'); top: auto; bottom: 5%; margin-left: -21%;"><span>Martin
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/martin-garrix.jpg'); top: auto; bottom: 5%; margin-left: -21%;"><span>Martin
 									Garrix</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/nicki-minaj.jpg'); top: 0px; left: auto; right: 4%;"><span>Nicki
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/nicki-minaj.jpg'); top: 0px; left: auto; right: 4%;"><span>Nicki
 									Minaj</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/justin-bieber.jpg'); top: 44%; margin-left: 41%;"><span>Justin
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/justin-bieber.jpg'); top: 44%; margin-left: 41%;"><span>Justin
 									Bieber</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/rihanna.jpg'); top: 32%; margin-left: 30%;"><span>Rihanna</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/ed-sheeran.jpg'); top: auto; bottom: 2%; margin-left: 34%;"><span>Ed
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/rihanna.jpg'); top: 32%; margin-left: 30%;"><span>Rihanna</span></a>
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/ed-sheeran.jpg'); top: auto; bottom: 2%; margin-left: 34%;"><span>Ed
 									Sheeran</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/u2.jpg'); top: 1%; margin-left: 26%;"><span>U2</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/drake.jpg'); top: 4%; margin-left: 14%;"><span>Drake</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/taylor-swift.jpg'); top: auto; bottom: 0; margin-left: 23%;"><span>Taylor
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/u2.jpg'); top: 1%; margin-left: 26%;"><span>U2</span></a>
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/drake.jpg'); top: 4%; margin-left: 14%;"><span>Drake</span></a>
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/taylor-swift.jpg'); top: auto; bottom: 0; margin-left: 23%;"><span>Taylor
 									Swift</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/eminem.jpg'); top: auto; bottom: 36%; margin-left: 19%;"><span>Eminem</span></a>
-							<a href="#" class="singer-bb-image"
-								style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/sia.jpg'); top: auto; bottom: 0; margin-left: 12.5%;"><span>Sia</span></a>
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/eminem.jpg'); top: auto; bottom: 36%; margin-left: 19%;"><span>Eminem</span></a>
+							<a href="#" class="singer-bb-image" style="background-image: url('<?php echo base_url() ?>assets/demos/music/images/singers/sia.jpg'); top: auto; bottom: 0; margin-left: 12.5%;"><span>Sia</span></a>
 						</div>
 					</div>
 
@@ -2304,23 +1896,19 @@ endforeach;?>
 
 	<!-- Audio Player
 		============================================= -->
-	<audio id="audio-player" preload="none" class="mejs__player" controls
-		data-mejsoptions='{"defaultAudioHeight": "50", "alwaysShowControls": "true"}' style="max-width:100%;">
+	<audio id="audio-player" preload="none" class="mejs__player" controls data-mejsoptions='{"defaultAudioHeight": "50", "alwaysShowControls": "true"}' style="max-width:100%;">
 		<source src="<?php echo base_url() ?>assets/demos/music/src/audios/nashe-si.mp3" type="audio/mp3">
 	</audio>
 
 	<!-- Default Track - onLoad
 		============================================= -->
-	<?php foreach ($dataTop as $item):
-    # code...
-    ?>
-				<div id="track-onload"
-					data-track="<?php echo base_url() ?>assets/demos/music/tracks/<?php echo $item['track_name'] ?> "
-					data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?> "
-					data-title=<?php echo $item['title'] ?> data-singer=<?php echo $item['artist'] ?>></div>
-				<?php
-endforeach;
-?>
+	<?php foreach ($dataTop as $item) :
+		# code...
+	?>
+		<div id="track-onload" data-track="<?php echo base_url() ?>assets/demos/music/tracks/<?php echo $item['track_name'] ?> " data-poster="<?php echo base_url() ?>assets/demos/music/tracks/poster-images/<?php echo $item['poster'] ?> " data-title=<?php echo $item['title'] ?> data-singer=<?php echo $item['artist'] ?>></div>
+	<?php
+	endforeach;
+	?>
 	<!-- Go To Top
 		============================================= -->
 	<div id="gotoTop" class="icon-angle-up" style="bottom: 70px;"></div>
@@ -2360,11 +1948,11 @@ endforeach;
 		var trackPlaying = '',
 			audioPlayer = document.getElementById('audio-player');
 
-		audioPlayer.addEventListener("ended", function () {
+		audioPlayer.addEventListener("ended", function() {
 			jQuery('.track-list').find('i').removeClass('icon-pause').addClass('icon-play');
 		});
 
-		audioPlayer.addEventListener("pause", function () {
+		audioPlayer.addEventListener("pause", function() {
 			jQuery('.track-list').find('i').removeClass('icon-pause').addClass('icon-play');
 		});
 
@@ -2408,7 +1996,7 @@ endforeach;
 			}
 		}
 
-		jQuery('.track-list').on('click', function () {
+		jQuery('.track-list').on('click', function() {
 			var sess = '<?php echo $this->session->userdata('email'); ?>';
 			// alert(sess);
 
@@ -2428,7 +2016,7 @@ endforeach;
 			}
 		});
 
-		jQuery(window).on('load', function () {
+		jQuery(window).on('load', function() {
 			var trackOnload = jQuery('#track-onload');
 
 			if (trackOnload.length > 0) {
@@ -2437,87 +2025,88 @@ endforeach;
 					trackTitle = trackOnload.attr('data-title'); // Track Title
 				trackSinger = trackOnload.attr('data-singer'); // Track Singer Name
 
-				setTimeout(function () {
+				setTimeout(function() {
 					changeAudio(audioTrack, posterUrl, trackTitle, trackSinger, false);
 				}, 500);
 			}
 		});
-		function login(){
-           
-		   var username = $("[name='username']").val();
-		   var password = $("[name='password']").val();
 
-		   $.ajax({
-			   type:'POST',
-			   data:'username='+username+'&password='+password,
-			   url: '<?php echo base_url('index.php/home/loginModal'); ?>',
-			   dataType: 'json',
-			   success: function(hasil) {
-				   $("#pesan").html(hasil.pesan);
+		function login() {
 
-				   if (hasil.success ==1) {
-					
-					   $("#myModal").modal('hide');
-					 
-					   $("#login").html("Logout");
-					   $('#login').text('Logout');
-					   location.reload();  
-					//    getData();
-					   
-					   $("[name='username'],[name='password']").val('');
-				   }
-			   }
-		   })
-	   }
+			var username = $("[name='username']").val();
+			var password = $("[name='password']").val();
 
-// function save()
-// {
-//     $('#btnSave').text('saving...'); //change button text
-//     $('#btnSave').attr('disabled',true); //set button disable 
-//     var url;
+			$.ajax({
+				type: 'POST',
+				data: 'username=' + username + '&password=' + password,
+				url: '<?php echo base_url('index.php/home/loginModal'); ?>',
+				dataType: 'json',
+				success: function(hasil) {
+					$("#pesan").html(hasil.pesan);
 
-//     if(save_method == 'add') {
-//         url = "<?php echo site_url('person/ajax_add')?>";
-//     } else {
-//         url = "<?php echo site_url('person/ajax_update')?>";
-//     }
+					if (hasil.success == 1) {
 
-//     // ajax adding data to database
-//     $.ajax({
-//         url : url,
-//         type: "POST",
-//         data: $('#form').serialize(),
-//         dataType: "JSON",
-//         success: function(data)
-//         {
+						$("#myModal").modal('hide');
 
-//             if(data.status) //if success close modal and reload ajax table
-//             {
-//                 $('#modal_form').modal('hide');
-//                 reload_table();
-//             }
-//             else
-//             {
-//                 for (var i = 0; i < data.inputerror.length; i++) 
-//                 {
-//                     $('[name="'+data.inputerror[i]+'"]').parent().parent().addClass('has-error'); //select parent twice to select div form-group class and add has-error class
-//                     $('[name="'+data.inputerror[i]+'"]').next().text(data.error_string[i]); //select span help-block class set text error string
-//                 }
-//             }
-//             $('#btnSave').text('save'); //change button text
-//             $('#btnSave').attr('disabled',false); //set button enable 
+						$("#login").html("Logout");
+						$('#login').text('Logout');
+						location.reload();
+						//    getData();
+
+						$("[name='username'],[name='password']").val('');
+					}
+				}
+			})
+		}
+
+		// function save()
+		// {
+		//     $('#btnSave').text('saving...'); //change button text
+		//     $('#btnSave').attr('disabled',true); //set button disable 
+		//     var url;
+
+		//     if(save_method == 'add') {
+		//         url = "<?php echo site_url('person/ajax_add') ?>";
+		//     } else {
+		//         url = "<?php echo site_url('person/ajax_update') ?>";
+		//     }
+
+		//     // ajax adding data to database
+		//     $.ajax({
+		//         url : url,
+		//         type: "POST",
+		//         data: $('#form').serialize(),
+		//         dataType: "JSON",
+		//         success: function(data)
+		//         {
+
+		//             if(data.status) //if success close modal and reload ajax table
+		//             {
+		//                 $('#modal_form').modal('hide');
+		//                 reload_table();
+		//             }
+		//             else
+		//             {
+		//                 for (var i = 0; i < data.inputerror.length; i++) 
+		//                 {
+		//                     $('[name="'+data.inputerror[i]+'"]').parent().parent().addClass('has-error'); //select parent twice to select div form-group class and add has-error class
+		//                     $('[name="'+data.inputerror[i]+'"]').next().text(data.error_string[i]); //select span help-block class set text error string
+		//                 }
+		//             }
+		//             $('#btnSave').text('save'); //change button text
+		//             $('#btnSave').attr('disabled',false); //set button enable 
 
 
-//         },
-//         error: function (jqXHR, textStatus, errorThrown)
-//         {
-//             alert('Error adding / update data');
-//             $('#btnSave').text('save'); //change button text
-//             $('#btnSave').attr('disabled',false); //set button enable 
+		//         },
+		//         error: function (jqXHR, textStatus, errorThrown)
+		//         {
+		//             alert('Error adding / update data');
+		//             $('#btnSave').text('save'); //change button text
+		//             $('#btnSave').attr('disabled',false); //set button enable 
 
-//         }
-//     });
-// }
+		//         }
+		//     });
+		// }
 	</script>
 	<?php $this->load->view('modals/modal_form'); ?>
 </body>
