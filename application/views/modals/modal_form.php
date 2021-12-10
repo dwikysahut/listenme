@@ -55,7 +55,7 @@
 
             <!--Grid column-->
             <div class="col-md-12">
-              <p class="font-small white-text d-flex justify-content-end">Don't have an account? <a  href="<?php echo base_url('login') ?>" class="green-text ml-1 font-weight-bold">
+              <p class="font-small white-text d-flex justify-content-end">Don't have an account? <a  href="<?php echo base_url('auth/') ?>" class="green-text ml-1 font-weight-bold">
                   Sign Up</a></p>
             </div>
             <!--Grid column-->

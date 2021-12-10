@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="<?php echo base_url() ?>assets/style.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/dark.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/swiper.css" type="text/css" />
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Music Specific Stylesheet -->
 		<link rel="stylesheet" href="<?php echo base_url() ?>assets/demos/music/music.css" type="text/css" />
 		<!-- / -->
@@ -112,9 +112,9 @@
 									<li class="menu-item"><a class="menu-link" href="#" data-href="#musics">
 										<div>Musics</div>
 									</a></li>
-									<li class="menu-item"><a class="menu-link" href="#">
+									<!-- <li class="menu-item"><a class="menu-link" href="#">
 										<div>About</div>
-									</a></li>
+									</a></li> -->
 									<li class="menu-item"><a class="menu-link" href="#"data-href="#music-explore">
 										<div>Discover</div>
 									</a></li>
@@ -134,11 +134,15 @@
 									</ul>
 								</li>
 								<!-- <li class="menu-item"><a class="menu-link" href="#"><div>Videos</div></a></li> -->
-
-								<li class="menu-item"><a class="menu-link" href="<?php echo site_url('premium') ?>">
-									<div><b>Join VIP</b></div>
+								<?php if ($this->session->userdata('id_status')==2 && $this->session->userdata('logged_in')==true): ?>
+									<li class="menu-item"><a class=" menu-link sub-menu custom" href="#"><i class="fa fa-user s" ><div class="menu-title s">VIP</div></i></a></li>
+							
+								<?php elseif($this->session->userdata('id_status')==1 && $this->session->userdata('logged_in')==true): ?>
+									<li class="menu-item"><a class="menu-link" href="">
+									<div><b>Free Account</b></div>
 								</a></li>
-
+							
+								<?php endif; ?>
 								<?php
 if ($this->session->userdata('email')):
 ?>
@@ -296,7 +300,7 @@ else:
 										</div>
 
 										<div class="pricing-action">
-											<a href="#" class="btn btn-danger btn-lg">JOIN NOW</a>
+											<a href="https://hematologia.org/mudah-untuk-bermain-judi-online/" class="btn btn-danger btn-lg">JOIN NOW</a>
 										</div>
 									</div>
 
@@ -314,7 +318,7 @@ else:
 										</div>
 
 										<div class="pricing-action">
-											<a href="#" class="btn btn-danger btn-lg">JOIN NOW</a>
+											<a href="https://www.warunkupnormal.com/" class="btn btn-danger btn-lg">JOIN NOW</a>
 										</div>
 									</div>
 
@@ -586,8 +590,10 @@ foreach ($dataHot as $item): ?>
 											class="icon-line-ellipsis"></i></a>
 											<ul class="dropdown-menu dropdown-menu-right">
 												<li>
-													<a class="dropdown-item" href="#"><span class="icon-line-plus"></span>
-													Add to Queue</a>
+												<?php if ($this->session->userdata('id_status')==2 && $this->session->userdata('logged_in')==true): ?>
+													
+													<!-- <a class="dropdown-item" href="#"><span class="icon-line-plus"></span>
+													Add to Queue</a> -->
 													<a class="dropdown-item" href="#"><span class="icon-music"></span> Add
 													to Playlist</a>
 													<a class="dropdown-item" href="#"><span
@@ -595,9 +601,12 @@ foreach ($dataHot as $item): ?>
 														<a class="dropdown-item" href="#"><span class="icon-line-heart"></span>
 														Love</a>
 														<div class="dropdown-divider"></div>
-														<a class="dropdown-item" href="#"><span class="icon-line-share"></span>
-														Share</a>
+														<!-- <a class="dropdown-item" href="#"><span class="icon-line-share"></span>
+														Share</a> -->
 													</li>
+													<?php else: ?>
+														<a class="dropdown-item" href="#"><span class="icon-music"></span> Play Shuffle</a>
+													<?php endif; ?>
 												</ul>
 											</div>
 										</div>
