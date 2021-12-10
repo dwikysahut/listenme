@@ -27,7 +27,7 @@ class Home extends CI_Controller
 
     function loginModal() {
         $username = $this->input->post('username');
-        $password = $this->input->post('password');
+        $password = md5($this->input->post('password'));
     
         if ($username == ''){
             $result['pesan'] = "Username harus diisi";
@@ -41,8 +41,8 @@ class Home extends CI_Controller
                 'password' =>$password
             );
             
-            $result['success']=$this->authModel->login($data);
-            if( $result['success']==1){
+            $result=$this->authModel->login($data);
+            if ($result['status'] == 200) {
                 $result['pesan']="";
 
             }
