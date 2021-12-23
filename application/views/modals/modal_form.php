@@ -29,11 +29,11 @@
           <div class="md-form pb-3">
             <input type="password" id="Form-pass5" class="form-control validate white-text" name="password">
             <label data-error="wrong" data-success="right" for="Form-pass5">Your password</label>
-            <div class="form-group mt-4">
+            <!-- <div class="form-group mt-4">
               <input class="form-check-input" type="checkbox" id="checkbox624">
               <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
                   Terms and Conditions</a></label>
-            </div>
+            </div> -->
           </div>
           </div>
 
@@ -55,7 +55,7 @@
 
             <!--Grid column-->
             <div class="col-md-12">
-              <p class="font-small white-text d-flex justify-content-end">Don't have an account? <a href="#" class="green-text ml-1 font-weight-bold">
+              <p class="font-small white-text d-flex justify-content-end">Don't have an account? <a  href="<?php echo base_url('auth/') ?>" class="green-text ml-1 font-weight-bold">
                   Sign Up</a></p>
             </div>
             <!--Grid column-->
