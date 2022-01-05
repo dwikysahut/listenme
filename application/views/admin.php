@@ -26,9 +26,22 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/admin/plugins/summernote/summernote-bs4.min.css">
+
+    <!-- themef -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/style.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
+
     <div class="wrapper">
 
         <!-- Navbar -->
@@ -39,10 +52,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
             </ul>
 
@@ -60,91 +70,6 @@
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <!-- Messages Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-comments"></i>
-                        <span class="badge badge-danger navbar-badge">3</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="<?php echo base_url() ?>assets/admin/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        Brad Diesel
-                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">Call me whenever you can...</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="<?php echo base_url() ?>assets/admin/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        John Pierce
-                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">I got your message bro</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
-                            <div class="media">
-                                <img src="<?php echo base_url() ?>assets/admin/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                                <div class="media-body">
-                                    <h3 class="dropdown-item-title">
-                                        Nora Silvester
-                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                                    </h3>
-                                    <p class="text-sm">The subject goes here</p>
-                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
-                            </div>
-                            <!-- Message End -->
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-                    </div>
-                </li>
-                <!-- Notifications Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-bell"></i>
-                        <span class="badge badge-warning navbar-badge">15</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header">15 Notifications</span>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> 4 new messages
-                            <span class="float-right text-muted text-sm">3 mins</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> 8 friend requests
-                            <span class="float-right text-muted text-sm">12 hours</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-file mr-2"></i> 3 new reports
-                            <span class="float-right text-muted text-sm">2 days</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-                    </div>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                         <i class="fas fa-expand-arrows-alt"></i>
@@ -162,7 +87,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
+            <a href="#" class="brand-link">
                 <img src="<?php echo base_url() ?>assets/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">Admin</span>
             </a>
@@ -206,7 +131,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="./index.html" class="nav-link active">
+                                    <a href="#" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Konfirmasi User VIP</p>
                                     </a>
@@ -259,48 +184,92 @@
                                     <h3 class="card-title">Konfirmasi User</h3>
                                 </div>
                                 <!-- /.card-header -->
+
+
+
                                 <div class="card-body">
                                     <table id="example1" class="table table-bordered table-striped">
-                                        <thead>
+                                        <thead align="center">
                                             <tr>
                                                 <th>No.</th>
                                                 <th>Nama User</th>
+                                                <th>Gambar</th>
+                                                <th>Total</th>
                                                 <th>Konfirmasi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Ken Bagus Panuluh Yudha
-                                                </td>
-                                                <td><input type="submit" class="btn btn-success" value="Konfirmasi"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Dwicky Satrio H
-                                                </td>
-                                                <td><input type="submit" class="btn btn-success" value="Konfirmasi"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Arnold Catur W
-                                                </td>
-                                                <td><input type="submit" class="btn btn-success" value="Konfirmasi"></td>
-                                            </tr>
+                                            <form action="<?php echo base_url() . 'admin/update_user_trans'; ?>" method="post">
+                                                <?php
+                                                $i = 1;
+                                                foreach ($dataTrans as $item) :
+                                                ?>
+
+                                                    <tr>
+                                                        <td><center><?php echo $i; ?><input type="hidden" name="id_user" value="<?php echo $item['id']; ?>"></td>
+                                                        <td><?php echo $item['name']; ?></td>
+                                                        <td>
+                                                            <a class="grid-item" href="<?php echo base_url('uploads/image/' . $item["nameg"] . ''); ?>" data-lightbox="image">
+                                                                <div class="grid-inner">
+                                                                    <img width="200px" src="<?php echo base_url('uploads/image/' . $item["nameg"] . ''); ?>">
+                                                                    <div class="bg-overlay">
+                                                                        <div class="bg-overlay-content dark">
+                                                                            <i class="icon-line-zoom-in h4 mb-0" data-hover-animate="fadeIn"></i>
+                                                                        </div>
+                                                                        <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </td>
+                                                        <td><center><?php echo $item['total']; ?></td>
+                                                        <td>
+                                                            <input type="submit" class="btn btn-success" value="Konfirmasi">
+                                                        </td>
+
+                                                    </tr>
                                         </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Nama User</th>
-                                                <th>Konfirmasi</th>
-                                            </tr>
-                                        </tfoot>
+
+                                    <?php
+                                                    $i++;
+                                                endforeach;
+                                    ?>
+                                    </form>
+                                    <tfoot align="center">
+                                        <tr>
+                                            <th>No.</th>
+                                            <th width="120px">Nama User</th>
+                                            <th>Gambar</th>
+                                            <th>Total</th>
+                                            <th>Konfirmasi</th>
+                                        </tr>
+                                    </tfoot>
                                     </table>
                                 </div>
+
+
+
                                 <!-- /.card-body -->
                             </div>
                         </div>
                     </div>
+
+                    <!-- Modal -->
+                    <div class="modal1 mfp-hide" id="myModal1">
+                        <div class="block mx-auto" style="background-color: #FFF; max-width: 500px;">
+                            <div class="feature-box fbox-center fbox-effect fbox-lg border-bottom-0 mb-0" style="padding: 40px;">
+                                <div class="fbox-icon">
+                                    <a href="#"><i class="icon-screen i-alt"></i></a>
+                                </div>
+                                <div class="fbox-content">
+                                    <h3>Responsive Layout<span class="subtitle">Adapts well on Devices</span></h3>
+                                </div>
+                            </div>
+                            <div class="section center m-0" style="padding: 30px;">
+                                <a href="#" class="button" onClick="$.magnificPopup.close();return false;">Don't Show me Again</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -322,6 +291,7 @@
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
+
 
     <!-- jQuery -->
     <script src="<?php echo base_url() ?>assets/admin/plugins/jquery/jquery.min.js"></script>
@@ -395,6 +365,15 @@
             });
         });
     </script>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="<?php echo base_url() ?>assets/js/jquery.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/plugins.min.js"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
+    <script src="<?php echo base_url() ?>assets/js/functions.js"></script>
 </body>
 
 </html>
